@@ -173,7 +173,7 @@ function myTrim(x) {
     fetch(url).then(function(response) {
           return response.json()
         }).then(function(json) {
-          console.log(json)
+          // console.log(json)
           allProverbs = json;
           // console.log( 'allProverbs isArray:', Array.isArray(allProverbs))
         });
@@ -246,6 +246,21 @@ function myTrim(x) {
       splittedWord3Arr.forEach(generateLi);
     });
 
+    // link to Add new proverb page
+/*     $("#addNewProverb").click(function() {
+      $.ajax({
+        url: "http://localhost:5000/api/proverbs/create",
+        success: function(data){ 
+            // $('#data').text(data);
+            alert("No error.");
+        },
+        error: function(){
+          alert("There was an error.");
+        }
+      });
+
+    });
+ */
     // clear the englishClue when mouse enters specificWord
     $("#specificWord").focus(function () { 
       $("li").remove(".ui-state-default")

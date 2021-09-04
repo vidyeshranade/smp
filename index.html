@@ -17,7 +17,9 @@
   </style>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- 
+  <!-- 2. Include touch punch -->
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  
   <script src="js/jquery.proverb.js"></script>
 	<script src="js/unicode.js"></script>
 	<!-- <script src="js/proverbs.data.js"></script> -->
@@ -34,6 +36,12 @@
   >  -->
   <label for="specificWord">Search by Proverb. Enter or paste in Marathi e.g. जेजुरी</label>
   <input id="specificWord"><span>Click Show Proverb, and drag tiles to put in order</span>
+  <div class="w3-container"></div>
+    <a href="https://dictation.io/speech" title= "For Voice Typing" class="w3-bar-item w3-button w3-right" target="_blank">Dictation</a>
+    <a href="http://localhost:5000/api/proverbs/create" title= "Add New Proverb" class="w3-bar-item w3-button w3-right" target="_blank">Add New Proverb</a>
+  </div>
+
+  
   <!-- <br> -->
   <input type="hidden" id="specificWord-id">
 </form>
