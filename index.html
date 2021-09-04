@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrambled मराठी Proverbs</title>
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/custom_styles.css">
+ 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #sortable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+    #sortable li { margin: 3px 3px 3px 5px; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+  <script src="js/jquery.proverb.js"></script>
+	<script src="js/unicode.js"></script>
+	<!-- <script src="js/proverbs.data.js"></script> -->
+
+
+</head>
+<body> 
+<!-- <div id="header">Select proverb by Number or specific word and sort the tiles below -->
+<div id="header">
+ <form>
+ <!-- <label for="sn">Search by any Number:</label>
+  <input id="sn" name="sn"  type="number" min="1" max="1920" 
+    placeholder="No. between 1 and 1920" value=700
+  >  -->
+  <label for="specificWord">Search by Proverb. Enter or paste in Marathi e.g. जेजुरी</label>
+  <input id="specificWord"><span>Click Show Proverb, and drag tiles to put in order</span>
+  <!-- <br> -->
+  <input type="hidden" id="specificWord-id">
+</form>
+  <button id="showByIDbtn"  >Show Proverb</button>
+  <button id="showFirstLastbtn"  >Show First and Last</button>
+  <button id="showAnswerbtn"  >Show Answer</button>
+  <!-- <p id="specificWord-desc"></p> -->
+
+  <!-- Paragraph to show clue -->
+  <p id="englishClue"></p>
+</div>
+
+
+<ul id="sortable">
+</ul> 
+
+
+<div id="Show-wrapper"><!-- show buttons will be appended here --></div>
+
+</body>
+</html>
