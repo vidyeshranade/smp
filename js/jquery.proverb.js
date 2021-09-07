@@ -147,9 +147,22 @@ function process2() {
         )
 
         if (arrayEquals(sortedAnswerArr, splittedWord3Arr)) {
-          alert('Congratulations...')
+          alert('अभिनंदन/ Congratulations...')
           
           $("li").css("background-color", "yellow")
+          // turn clockwise
+          $('li').animate(
+            { deg: 360 },
+            {
+              duration: 1200,
+              step: function(now) {
+                $(this).css({ transform: 'rotate(' + now + 'deg)' });
+              }
+            }
+          );
+          
+          $("li").fadeOut(3000);
+          
           
         }
     }
