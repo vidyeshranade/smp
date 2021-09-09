@@ -46,7 +46,7 @@ let reqTerm = ''
     // let ans = 'जनगणमन'
     let eclue = obj1.clue ? obj1.clue: ''
     // let mclue = obj1.marathiClue ? obj1.marathiClue: ''
-    $("#englishClue").text('Clue: '+eclue).addClass("w3-panel w3-pale-blue w3-leftbar w3-border-blue")
+    $("#englishClue").text('Clue: '+eclue).addClass("w3-panel w3-pale-blue w3-leftbar w3-border-blue").show()
     // add this later in below line: +mclue
     // $("#marathiClue").text('Marathi Clue: ').addClass("w3-panel w3-pale-blue w3-leftbar w3-border-blue")
 
@@ -160,8 +160,19 @@ function process2() {
               }
             }
           );
+          // turn anti-clockwise
+          $('li').animate(
+            { deg: -360 },
+            {
+              duration: 1200,
+              step: function(now) {
+                $(this).css({ transform: 'rotate(' + now + 'deg)' });
+              }
+            }
+          );
           
           $("li").fadeOut(3000);
+          $("#englishClue").fadeOut(3000);
           
           
         }
@@ -218,7 +229,7 @@ function myTrim(x) {
         $( "#specificWord-id" ).val( ui.item.label );
         // $( "#sn" ).val( ui.item.value );
         // $( "#specificWord-desc" ).html( ui.item.desc );
-        $("#englishClue").text('Clue: '+ ui.item.desc).addClass("w3-panel w3-pale-blue w3-leftbar w3-border-blue")    
+        $("#englishClue").text('Clue: '+ ui.item.desc).addClass("w3-panel w3-pale-blue w3-leftbar w3-border-blue").show()    
         
         return false;
       }
