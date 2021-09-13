@@ -23,10 +23,7 @@
   <script src="js/jquery.proverb.js"></script>
 	<script src="js/unicode.js"></script>
 	<!-- <script src="js/proverbs.data.js"></script> -->
-
-
-</head>
-<body> 
+ 
 <!-- <div id="header">Select proverb by Number or specific word and sort the tiles below -->
 <div id="header">
  <form>
@@ -34,32 +31,35 @@
   <input id="sn" name="sn"  type="number" min="1" max="1920" 
     placeholder="No. between 1 and 1920" value=700
   >  -->
-  <label for="specificWord">Type/ paste word in मराठी or paste any अक्षर like: ळ क्ष ढ ण etc.</label>
-  <input id="specificWord"><span>Click Show Proverb, and drag tiles to put in order</span>
+  <label for="specificWord">Type/ paste word in मराठी, choose from list</label>
+  <input id="specificWord"><span>and Click Show Proverb. Then drag tiles to put in correct order</span>
   <div class="w3-container"></div>
-    <a href="https://dictation.io/speech" title= "Use or Voice Typing" class="w3-bar-item w3-button w3-right" target="_blank">Dictation</a>
     <a href="https://scrambledmarathiproverbs1.herokuapp.com/api/proverbs/create" title= "If your proverb is not found then, Add" class="w3-bar-item w3-button w3-right" target="_blank">Add New Proverb</a>
+    <a href="https://dictation.io/speech" title= "Use for Voice Typing" class="w3-bar-item w3-button w3-right" target="_blank">Dictation</a>
   </div>
 
   
   <!-- <br> -->
   <input type="hidden" id="specificWord-id">
 </form>
-  <button id="showByIDbtn"  >Show Proverb</button>
-  <button id="showFirstLastbtn"  >Show First and Last</button>
-  <button id="showAnswerbtn"  >Show Answer</button>
-  <!-- <p id="specificWord-desc"></p> -->
-
-  <!-- Paragraph to show clue -->
-  <p id="englishClue"></p>
+<p id="englishClue"></p>
+<br>
+</div>
+<div id="Show-wrapper">
+  <!-- show buttons will be appended here -->
+  <button id="showByIDbtn" class="w3-btn w3-blue">Show Proverb</button>
+  <br>
+  <button id="showFirstLastbtn" class="w3-btn w3-grey" >Show First and Last</button>
+  <br>
+  <button id="showAnswerbtn"  class="w3-btn w3-lime">Show Answer</button>
 </div>
 
 
-<ul id="sortable">
-</ul> 
-
-
-<div id="Show-wrapper"><!-- show buttons will be appended here --></div>
+<div>
+  <ul id="sortable">
+  </ul> 
+</div>
+<br>
 
 </body>
 </html>

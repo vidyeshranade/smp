@@ -173,6 +173,8 @@ function process2() {
           
           $("li").fadeOut(3000);
           $("#englishClue").fadeOut(3000);
+          $("#showAnswerbtn").hide()
+          $("#showFirstLastbtn").hide()
           
           
         }
@@ -190,6 +192,10 @@ function myTrim(x) {
 
 
   $(document).ready(function() {
+
+    // hide the other two buttons
+    $("#showAnswerbtn").hide()
+    $("#showFirstLastbtn").hide()
     
     // fetch data from this end point
     // let url = 'http://localhost:5000/api/proverbs/all_proverbs'
@@ -257,8 +263,11 @@ function myTrim(x) {
       // process1( $("#sn").val() )
       
       process1A($( "#specificWord-id" ).val())
+      $("#showAnswerbtn").show()
+      $("#showFirstLastbtn").show()
     });
   
+    
     $("#showFirstLastbtn").click(function() {
       alert('First: ' + splittedWord3Arr[0] + '\n' + 'Last: ' + splittedWord3Arr[splittedWord3Arr.length-1] )
     });
