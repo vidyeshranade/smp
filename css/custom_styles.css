@@ -4,6 +4,7 @@
 
 * {
     box-sizing: border-box;
+    zoom: 83%;
   }
   
 body {
@@ -12,7 +13,7 @@ body {
     margin: 10px auto;
     /* margin-right: auto; */
     /* overflow: auto; */
-    zoom: 83%;
+   
 }
 table { 
     border-collapse: collapse; 
