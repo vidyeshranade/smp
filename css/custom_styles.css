@@ -4,7 +4,7 @@
 
 * {
     box-sizing: border-box;
-    zoom: 83%;
+    
   }
   
 body {
@@ -75,3 +75,7 @@ button:active {
   transform: translateY(4px);
 }
 
+.zoomedElement {
+    background-color: #CCF;
+    zoom: 80%;
+  }
