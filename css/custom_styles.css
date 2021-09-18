@@ -9,9 +9,10 @@
 body {
     font: 62.5%/1.3em Helvetica, sans-serif;
     width: 90.3%;
-    /* margin: 10px auto; */
-    margin-right: auto;
+    margin: 10px auto;
+    /* margin-right: auto; */
     /* overflow: auto; */
+    zoom: 83%;
 }
 table { 
     border-collapse: collapse; 
