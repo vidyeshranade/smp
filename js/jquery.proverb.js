@@ -150,6 +150,8 @@ function process2() {
           alert('अभिनंदन/ Congratulations...')
           
           $("li").css("background-color", "yellow")
+          $("li").slideUp('slow');
+          $("li").slideDown('slow');
           // turn clockwise
           $('li').animate(
             { deg: 360 },
@@ -171,8 +173,7 @@ function process2() {
             }
           );
           
-          $("li").slideUp('fast');
-          $("li").slideDown('slow');
+         
           $("li").fadeOut(3000);
           $("#englishClue").fadeOut(3000);
           $("#showAnswerbtn").hide()

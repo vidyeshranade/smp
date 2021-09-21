@@ -75,7 +75,3 @@ button:active {
   transform: translateY(4px);
 }
 
-.zoomedElement {
-    background-color: #CCF;
-    zoom: 80%;
-  }
