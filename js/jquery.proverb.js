@@ -171,6 +171,8 @@ function process2() {
             }
           );
           
+          $("li").slideUp('fast');
+          $("li").slideDown('slow');
           $("li").fadeOut(3000);
           $("#englishClue").fadeOut(3000);
           $("#showAnswerbtn").hide()
