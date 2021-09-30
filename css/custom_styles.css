@@ -1,12 +1,12 @@
 /*
     Default puzzle styling
 */
-
+/*
 * {
     box-sizing: border-box;
         
   }
-  
+*/ 
 html,body {
     font: 62.5%/1.3em Helvetica, sans-serif;
     width: 90.3%;
