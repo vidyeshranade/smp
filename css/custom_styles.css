@@ -4,18 +4,14 @@
 
 * {
     box-sizing: border-box;
-    width: 90.3%;
-    margin-left: 10px;
-        
+    padding: 10px;       
   }
  
 html,body {
     font: 62.5%/1.3em Helvetica, sans-serif;
-    width: 90.3%;
+    width: auto;
     margin: auto;
-    margin-top: 20px;
-    /* margin-right: auto; */
-    /* overflow: auto; */
+    overflow: auto;
    
 }
 table { 
@@ -83,4 +79,5 @@ button:active {
     outline: #4CAF50 solid 10px;
     margin: auto;
     padding: 20px;
+    background: rgb(236, 236, 224);
 }
