@@ -202,7 +202,7 @@ function myTrim(x) {
     
     // fetch data from this end point
     // let url = 'http://localhost:5000/api/proverbs/all_proverbs'
-    let url = 'https://scrambledmarathiproverbs1.herokuapp.com/api/proverbs/all_proverbs'
+    let url = 'https://scrambledmarathiproverbs1.onrender.com/api/proverbs/all_proverbs'
     fetch(url).then(function(response) {
           return response.json()
         }).then(function(json) {
