@@ -10,7 +10,7 @@ sentenses bearing the cognizance earned from the real life experiences.
 These help serve as a guide in taking decision when in dilemma.
 
 You can share you own Proverbs (see video under How-to --> Share (Video) at
-https://scrambledmarathiproverbs1.herokuapp.com/
+https://scrambledmarathiproverbs1.onrender.com/
 
 
 ## Usage
