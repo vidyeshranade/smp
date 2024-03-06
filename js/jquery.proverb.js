@@ -203,7 +203,8 @@ function myTrim(x) {
     // fetch data from this end point
     // let url = 'http://localhost:5000/api/proverbs/all_proverbs'
     // let url = 'https://scrambledmarathiproverbs1.herokuapp.com/api/proverbs/all_proverbs'
-    let url = 'https://scrambled-marathi-proverbs-2.onrender.com/api/proverbs/all_proverbs'
+    // let url = 'https://scrambled-marathi-proverbs-2.onrender.com/api/proverbs/all_proverbs'
+    // Since the postgre DB is only for 90 days period, switching back to file data.
     
     fetch(url).then(function(response) {
           return response.json()
@@ -224,8 +225,8 @@ function myTrim(x) {
           matcher = new RegExp(req.term);
           reqTerm = req.term
           // console.log('matcher on assigning: ' + matcher)
-          // var a = $.grep( proverbs, function(item,index){
-          var a = $.grep( allProverbs, function(item,index){
+          var a = $.grep( proverbs, function(item,index){
+          // var a = $.grep( allProverbs, function(item,index){
             
               return matcher.test(item.label);
           });
