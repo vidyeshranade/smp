@@ -205,7 +205,7 @@ function myTrim(x) {
     // let url = 'https://scrambledmarathiproverbs1.herokuapp.com/api/proverbs/all_proverbs'
     // let url = 'https://scrambled-marathi-proverbs-2.onrender.com/api/proverbs/all_proverbs'
     // Since the postgre DB is only for 90 days period, switching back to file data.
-    
+/*    let url = '';
     fetch(url).then(function(response) {
           return response.json()
         }).then(function(json) {
@@ -213,7 +213,7 @@ function myTrim(x) {
           allProverbs = json;
           // console.log( 'allProverbs isArray:', Array.isArray(allProverbs))
         });
-
+*/
     // console.log(proverbs)
     $("#specificWord").autocomplete({        
       minLength: 0,
